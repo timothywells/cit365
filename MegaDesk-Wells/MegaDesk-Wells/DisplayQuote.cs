@@ -16,12 +16,25 @@ namespace MegaDesk_Wells
         {
             InitializeComponent();
         }
-
+        /*
         private void btnClose_Click(object sender, EventArgs e)
         {
             MainMenu viewMainMenu = (MainMenu)Tag;
             viewMainMenu.Show();
             Close();
+        }
+        */
+        private void txtOrderDate_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+        
+
+        
+
+        private void DisplayQuote_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -40,9 +40,11 @@
             this.comboBoxDays = new System.Windows.Forms.ComboBox();
             this.btnClose = new System.Windows.Forms.Button();
             this.btnGetQuote = new System.Windows.Forms.Button();
+            this.updownDW = new System.Windows.Forms.NumericUpDown();
+            this.updownDD = new System.Windows.Forms.NumericUpDown();
             this.comboBoxNumDraw = new System.Windows.Forms.ComboBox();
-            this.comboBoxDD = new System.Windows.Forms.ComboBox();
-            this.comboBoxDW = new System.Windows.Forms.ComboBox();
+            ((System.ComponentModel.ISupportInitialize)(this.updownDW)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.updownDD)).BeginInit();
             this.SuspendLayout();
             // 
             // lblFullName
@@ -174,6 +176,23 @@
             this.btnGetQuote.UseVisualStyleBackColor = true;
             this.btnGetQuote.Click += new System.EventHandler(this.btnGetQuote_Click);
             // 
+            // updownDW
+            // 
+            this.updownDW.Location = new System.Drawing.Point(200, 70);
+            this.updownDW.Name = "updownDW";
+            this.updownDW.Size = new System.Drawing.Size(200, 20);
+            this.updownDW.TabIndex = 11;
+            this.updownDW.Validating += new System.ComponentModel.CancelEventHandler(this.updownDW_Validating);
+            // 
+            // updownDD
+            // 
+            this.updownDD.Location = new System.Drawing.Point(200, 110);
+            this.updownDD.Name = "updownDD";
+            this.updownDD.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.updownDD.Size = new System.Drawing.Size(200, 20);
+            this.updownDD.TabIndex = 11;
+            this.updownDD.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.keypressDDValid);
+            // 
             // comboBoxNumDraw
             // 
             this.comboBoxNumDraw.DropDownHeight = 100;
@@ -181,49 +200,24 @@
             this.comboBoxNumDraw.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBoxNumDraw.FormattingEnabled = true;
             this.comboBoxNumDraw.IntegralHeight = false;
-            this.comboBoxNumDraw.Location = new System.Drawing.Point(200, 150);
+            this.comboBoxNumDraw.Location = new System.Drawing.Point(200, 147);
             this.comboBoxNumDraw.Name = "comboBoxNumDraw";
             this.comboBoxNumDraw.Size = new System.Drawing.Size(200, 28);
             this.comboBoxNumDraw.TabIndex = 8;
-            // 
-            // comboBoxDD
-            // 
-            this.comboBoxDD.DropDownHeight = 100;
-            this.comboBoxDD.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.comboBoxDD.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBoxDD.FormattingEnabled = true;
-            this.comboBoxDD.IntegralHeight = false;
-            this.comboBoxDD.Location = new System.Drawing.Point(200, 110);
-            this.comboBoxDD.Name = "comboBoxDD";
-            this.comboBoxDD.Size = new System.Drawing.Size(200, 28);
-            this.comboBoxDD.TabIndex = 8;
-            // 
-            // comboBoxDW
-            // 
-            this.comboBoxDW.DropDownHeight = 100;
-            this.comboBoxDW.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.comboBoxDW.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBoxDW.FormattingEnabled = true;
-            this.comboBoxDW.IntegralHeight = false;
-            this.comboBoxDW.Location = new System.Drawing.Point(200, 70);
-            this.comboBoxDW.Name = "comboBoxDW";
-            this.comboBoxDW.Size = new System.Drawing.Size(200, 28);
-            this.comboBoxDW.TabIndex = 8;
-            this.comboBoxDW.SelectedIndexChanged += new System.EventHandler(this.comboBoxDW_SelectedIndexChanged);
-            this.comboBoxDW.Validated += new System.EventHandler(this.comboBoxDW_Validating);
+            this.comboBoxNumDraw.SelectedIndexChanged += new System.EventHandler(this.comboBoxSurface_SelectedIndexChanged);
             // 
             // AddQuote
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(444, 341);
+            this.Controls.Add(this.updownDD);
+            this.Controls.Add(this.updownDW);
             this.Controls.Add(this.btnGetQuote);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.comboBoxDays);
-            this.Controls.Add(this.comboBoxSurface);
             this.Controls.Add(this.comboBoxNumDraw);
-            this.Controls.Add(this.comboBoxDD);
-            this.Controls.Add(this.comboBoxDW);
+            this.Controls.Add(this.comboBoxSurface);
             this.Controls.Add(this.textFullName);
             this.Controls.Add(this.lblStandardOrderSpeed);
             this.Controls.Add(this.lblRush);
@@ -234,6 +228,8 @@
             this.Controls.Add(this.lblFullName);
             this.Name = "AddQuote";
             this.Text = "Add Quote";
+            ((System.ComponentModel.ISupportInitialize)(this.updownDW)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.updownDD)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -253,8 +249,8 @@
         private System.Windows.Forms.ComboBox comboBoxDays;
         private System.Windows.Forms.Button btnClose;
         private System.Windows.Forms.Button btnGetQuote;
+        private System.Windows.Forms.NumericUpDown updownDW;
+        private System.Windows.Forms.NumericUpDown updownDD;
         private System.Windows.Forms.ComboBox comboBoxNumDraw;
-        private System.Windows.Forms.ComboBox comboBoxDD;
-        private System.Windows.Forms.ComboBox comboBoxDW;
     }
 }

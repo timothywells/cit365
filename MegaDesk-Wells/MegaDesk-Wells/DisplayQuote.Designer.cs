@@ -37,13 +37,13 @@
             this.lblFullName = new System.Windows.Forms.Label();
             this.ldlDate = new System.Windows.Forms.Label();
             this.lblTotal = new System.Windows.Forms.Label();
-            this.textFullName = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtNameDQ = new System.Windows.Forms.TextBox();
+            this.txtDWDQ = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textOrderDate = new System.Windows.Forms.TextBox();
+            this.txtNumDrawDQ = new System.Windows.Forms.TextBox();
+            this.txtSurfMatDQ = new System.Windows.Forms.TextBox();
+            this.txtOrderSpeedDQ = new System.Windows.Forms.TextBox();
+            this.txtOrderDate = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.textBox8 = new System.Windows.Forms.TextBox();
@@ -63,7 +63,6 @@
             this.btnClose.TabIndex = 11;
             this.btnClose.Text = "&Close";
             this.btnClose.UseVisualStyleBackColor = true;
-            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // lblRush
             // 
@@ -145,25 +144,25 @@
             this.lblTotal.Text = "Total Cost:";
             this.lblTotal.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // textFullName
+            // txtNameDQ
             // 
-            this.textFullName.BackColor = System.Drawing.SystemColors.Window;
-            this.textFullName.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textFullName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textFullName.Location = new System.Drawing.Point(200, 80);
-            this.textFullName.Name = "textFullName";
-            this.textFullName.Size = new System.Drawing.Size(150, 19);
-            this.textFullName.TabIndex = 20;
+            this.txtNameDQ.BackColor = System.Drawing.SystemColors.Window;
+            this.txtNameDQ.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtNameDQ.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNameDQ.Location = new System.Drawing.Point(200, 80);
+            this.txtNameDQ.Name = "txtNameDQ";
+            this.txtNameDQ.Size = new System.Drawing.Size(150, 19);
+            this.txtNameDQ.TabIndex = 20;
             // 
-            // textBox1
+            // txtDWDQ
             // 
-            this.textBox1.BackColor = System.Drawing.SystemColors.Window;
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(200, 120);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(150, 19);
-            this.textBox1.TabIndex = 21;
+            this.txtDWDQ.BackColor = System.Drawing.SystemColors.Window;
+            this.txtDWDQ.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtDWDQ.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDWDQ.Location = new System.Drawing.Point(200, 120);
+            this.txtDWDQ.Name = "txtDWDQ";
+            this.txtDWDQ.Size = new System.Drawing.Size(150, 19);
+            this.txtDWDQ.TabIndex = 21;
             // 
             // textBox3
             // 
@@ -175,45 +174,46 @@
             this.textBox3.Size = new System.Drawing.Size(150, 19);
             this.textBox3.TabIndex = 21;
             // 
-            // textBox4
+            // txtNumDrawDQ
             // 
-            this.textBox4.BackColor = System.Drawing.SystemColors.Window;
-            this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(200, 200);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(150, 19);
-            this.textBox4.TabIndex = 21;
+            this.txtNumDrawDQ.BackColor = System.Drawing.SystemColors.Window;
+            this.txtNumDrawDQ.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtNumDrawDQ.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNumDrawDQ.Location = new System.Drawing.Point(200, 200);
+            this.txtNumDrawDQ.Name = "txtNumDrawDQ";
+            this.txtNumDrawDQ.Size = new System.Drawing.Size(150, 19);
+            this.txtNumDrawDQ.TabIndex = 21;
             // 
-            // textBox5
+            // txtSurfMatDQ
             // 
-            this.textBox5.BackColor = System.Drawing.SystemColors.Window;
-            this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(200, 240);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(150, 19);
-            this.textBox5.TabIndex = 21;
+            this.txtSurfMatDQ.BackColor = System.Drawing.SystemColors.Window;
+            this.txtSurfMatDQ.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtSurfMatDQ.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSurfMatDQ.Location = new System.Drawing.Point(200, 240);
+            this.txtSurfMatDQ.Name = "txtSurfMatDQ";
+            this.txtSurfMatDQ.Size = new System.Drawing.Size(150, 19);
+            this.txtSurfMatDQ.TabIndex = 21;
             // 
-            // textBox6
+            // txtOrderSpeedDQ
             // 
-            this.textBox6.BackColor = System.Drawing.SystemColors.Window;
-            this.textBox6.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.Location = new System.Drawing.Point(200, 280);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(150, 19);
-            this.textBox6.TabIndex = 21;
+            this.txtOrderSpeedDQ.BackColor = System.Drawing.SystemColors.Window;
+            this.txtOrderSpeedDQ.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtOrderSpeedDQ.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtOrderSpeedDQ.Location = new System.Drawing.Point(200, 280);
+            this.txtOrderSpeedDQ.Name = "txtOrderSpeedDQ";
+            this.txtOrderSpeedDQ.Size = new System.Drawing.Size(150, 19);
+            this.txtOrderSpeedDQ.TabIndex = 21;
             // 
-            // textOrderDate
+            // txtOrderDate
             // 
-            this.textOrderDate.BackColor = System.Drawing.SystemColors.Window;
-            this.textOrderDate.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textOrderDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textOrderDate.Location = new System.Drawing.Point(200, 40);
-            this.textOrderDate.Name = "textOrderDate";
-            this.textOrderDate.Size = new System.Drawing.Size(150, 19);
-            this.textOrderDate.TabIndex = 22;
+            this.txtOrderDate.BackColor = System.Drawing.SystemColors.Window;
+            this.txtOrderDate.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtOrderDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtOrderDate.Location = new System.Drawing.Point(200, 40);
+            this.txtOrderDate.Name = "txtOrderDate";
+            this.txtOrderDate.Size = new System.Drawing.Size(150, 19);
+            this.txtOrderDate.TabIndex = 22;
+            this.txtOrderDate.TextChanged += new System.EventHandler(this.txtOrderDate_TextChanged);
             // 
             // textBox2
             // 
@@ -292,18 +292,18 @@
             this.ClientSize = new System.Drawing.Size(534, 411);
             this.Controls.Add(this.textBox11);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textOrderDate);
+            this.Controls.Add(this.txtOrderDate);
             this.Controls.Add(this.textBox10);
-            this.Controls.Add(this.textBox6);
+            this.Controls.Add(this.txtOrderSpeedDQ);
             this.Controls.Add(this.textBox9);
-            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.txtSurfMatDQ);
             this.Controls.Add(this.textBox8);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.txtNumDrawDQ);
             this.Controls.Add(this.textBox7);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.textFullName);
+            this.Controls.Add(this.txtDWDQ);
+            this.Controls.Add(this.txtNameDQ);
             this.Controls.Add(this.lblTotal);
             this.Controls.Add(this.ldlDate);
             this.Controls.Add(this.lblRush);
@@ -315,6 +315,7 @@
             this.Controls.Add(this.btnClose);
             this.Name = "DisplayQuote";
             this.Text = "DisplayQuote";
+            this.Load += new System.EventHandler(this.DisplayQuote_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -331,13 +332,13 @@
         private System.Windows.Forms.Label lblFullName;
         private System.Windows.Forms.Label ldlDate;
         private System.Windows.Forms.Label lblTotal;
-        private System.Windows.Forms.TextBox textFullName;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtNameDQ;
+        private System.Windows.Forms.TextBox txtDWDQ;
         private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textOrderDate;
+        private System.Windows.Forms.TextBox txtNumDrawDQ;
+        private System.Windows.Forms.TextBox txtSurfMatDQ;
+        private System.Windows.Forms.TextBox txtOrderSpeedDQ;
+        private System.Windows.Forms.TextBox txtOrderDate;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.TextBox textBox8;
